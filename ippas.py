@@ -9,8 +9,6 @@ try:
     driver = webd.Chrome(r"C:\Users\beata\Downloads\chromedriver_win32/chromedriver.exe")
     driver.get("https://www.itpassportsiken.com/ipkakomon.php")
     
-    #first page
-    #gets selector
     elem_start_btn = driver.find_element_by_css_selector("#configform > div.img_margin > input") 
     elem_start_btn.click()
     
@@ -36,13 +34,14 @@ try:
                 print("selector ch")
                 elem_ans_btn = driver.find_element_by_css_selector("#t > button") 
                
-        elem_ans_btn.click()
-        print(x)
-        sleep(1)
-        elem_next_btn = driver.find_element_by_css_selector("#configform > div.bottomBtns > input")
-        elem_next_btn.click()
-   #driver.close()
-except Exception as e:
-    print(e)
-    pass
+            elem_ans_btn.click()
+            print(number)
+            sleep(1)
+            elem_next_btn = driver.find_element_by_css_selector("#configform > div.bottomBtns > input")
+            elem_next_btn.click()
+       #driver.close()
+    except Exception as e:
+        print(e)
+        pass
+
 
