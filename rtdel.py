@@ -3,9 +3,9 @@ from time import sleep
 from selenium.webdriver.common.by import By
 
 print("login")
-twi_id = "@_zith"#input()
-twi_pass = "398267qg"#input() 
-tweets = int(input())
+twi_id = input("id")
+twi_pass = input("pass") 
+tweets = int(input("num"))
 
 ##open driver
 driver = webd.Chrome(r"C:\Users\b8364\Downloads\chromedriver_win32\chromedriver.exe")
